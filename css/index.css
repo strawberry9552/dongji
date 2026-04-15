@@ -1407,6 +1407,7 @@ footer h1 {
     width: 1000%;
     margin: 2rem auto;
     display: flex;
+    gap: 0px;
   }
   #con4_m .pf_wrap {
     width: 100%;
