@@ -707,7 +707,6 @@ header {
   width: 1000%;
   margin: 5rem auto;
   display: flex;
-  gap: 1rem;
 }
 .pf_wrap {
   width: 100%;
@@ -718,6 +717,7 @@ header {
   border: 1px solid #3eb02a;
   padding: 3rem 10rem;
   box-shadow: 3px 3px 5px 0px #22222241;
+  margin: 0 20px;
 }
 .pf_wrap.flex_on {
   display: flex;
@@ -981,7 +981,6 @@ footer h1 {
     width: 1000%;
     margin: 5rem auto;
     display: flex;
-    gap: 1rem;
   }
   .pf_wrap {
     width: 100%;
@@ -992,6 +991,7 @@ footer h1 {
     border: 1px solid #3eb02a;
     padding: 3rem 5rem;
     box-shadow: 3px 3px 5px 0px #22222241;
+    margin: 0 20px;
   }
   .pf_wrap.flex_on {
     display: flex;
@@ -1370,6 +1370,7 @@ footer h1 {
   }
   #con4_m .con4_tit > h2 {
     margin: 1rem 0 2rem;
+    font-size: 40px;
   }
   #con4_m .con4_tit > .more {
     color: #3eb02a;
@@ -1430,20 +1431,25 @@ footer h1 {
   #con4_m .pf_wrap .pf_btn {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     gap: 1rem;
   }
   #con4_m .pf_wrap .pf_btn > div {
-    width: 50%;
+    width: 100%;
   }
   #con4_m .pf_btn > div > a {
     display: block;
     padding: 1rem 2rem;
   }
   #con4_m .pf_txt {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    word-break: keep-all;
+  }
+  #con4_m .pf_txt > p {
+    font-size: 0.8em;
+    margin-top: 1rem;
   }
 }
 @media (max-width: 767px) {
@@ -1461,8 +1467,17 @@ footer h1 {
     justify-content: space-between;
     align-items: center;
   }
+  #header .h_btn {
+    display: none;
+  }
 
   /* 비주얼 모바일 */
+
+  #visual .slide-img {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+  }
   #visual .visual_txt {
     position: relative;
     top: 10%;
@@ -1471,14 +1486,75 @@ footer h1 {
     margin: 0 auto;
   }
   #visual .visual_txt h2 {
-    font-size: 2.3em;
+    font-size: 1.5em;
+  }
+  #visual .slide_dot {
+    position: absolute;
+    left: 50%;
+    bottom: 35%;
+    color: #fff;
+    display: flex;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+  }
+
+  /* 후원하기 영역 */
+  #visual .boost_wrap {
+    width: 100%;
+    height: 30%;
+    background-color: #3eb02a;
+  }
+  #visual .boost {
+    width: 100%;
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  #visual form > button {
+    background-color: #fff;
+    display: inline-block;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 24px;
+    color: #3eb02a;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #visual .boost_wrap {
+    padding: 1rem;
+  }
+  #visual .boost {
+    display: flex;
+    flex-direction: column;
+  }
+  #visual .boost_tit {
+    word-break: keep-all;
+    width: 100%;
+  }
+  #visual .boost_tit h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+  }
+  #visual form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
   #visual form > button {
     background-color: #fff;
     display: inline-block;
-    padding: 1rem;
+    padding: 0.5rem;
     width: 100%;
-    font-size: 24px;
+    font-size: 16px;
     color: #3eb02a;
     border-radius: 20px;
     cursor: pointer;
@@ -1491,7 +1567,7 @@ footer h1 {
   .txtbox {
     width: 100%;
     position: absolute;
-    font-size: 2.8em;
+    font-size: 2em;
     right: 0;
     top: 10%;
     display: flex;
@@ -1662,6 +1738,42 @@ footer h1 {
     display: inline-block;
     margin-bottom: 0.5rem;
     font-weight: 700;
+  }
+
+  /* 섹션3 */
+  #container section.con3 {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/section3_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .con3_wrap {
+    width: 100%;
+    max-width: 1024px;
+    padding: 4rem 40px;
+    margin: 0 auto;
+  }
+  .con3_tit {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 4rem 0 0;
+    color: #fff;
+  }
+  .con3_tit > .sub2 {
+    background-color: #3eb02a;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1em;
+  }
+  .con3_tit h2 {
+    font-size: 40px;
   }
 
   /* 푸터 */
