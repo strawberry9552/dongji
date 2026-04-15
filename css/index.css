@@ -982,7 +982,7 @@ footer h1 {
     width: 1000%;
     margin: 5rem auto;
     display: flex;
-    gap: 0;
+    gap: 0px;
   }
   .pf_wrap {
     width: 100%;
