@@ -1,0 +1,68 @@
+@import url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy.css");
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+html,
+body {
+  font-family: "Pretendard", sans-serif;
+  -webkit-font-smoothing: antialiased; /* Chrome, Safari, Edge */
+  -moz-osx-font-smoothing: grayscale; /* Firefox */
+  text-rendering: optimizeLegibility; /* 렌더링 속도보다 가독성 최적화 */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "Paperlogy", sans-serif;
+  font-weight: 700;
+  transform: skew(-0.1deg);
+}
+
+/* 글꼴 사이즈 */
+.tit1 {
+  font-size: 56px;
+  letter-spacing: -5%;
+}
+.tit2 {
+  font-size: 48px;
+  letter-spacing: -5%;
+}
+.tit3 {
+  font-size: 36px;
+  letter-spacing: -5%;
+}
+.tit4 {
+  font-size: 24px;
+  letter-spacing: -5%;
+}
+.sub1 {
+  font-size: 32px;
+}
+.sub2 {
+  font-size: 24px;
+}
+.sub3 {
+  font-size: 20px;
+}
+.txt1 {
+  font-size: 20px;
+}
+.txt2 {
+  font-size: 16px;
+}
+
+/* 버튼 */
+.btn1 {
+  background-color: #3eb02a;
+  color: #f1f1f1;
+  padding: 0.5rem 2rem;
+}
+.btn2 {
+  border: 1px solid #3eb02a;
+  color: #3eb02a;
+  padding: 0.5rem 2rem;
+}

@@ -1,0 +1,806 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>동지(동물도 지구의 주인이다)</title>
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <script src="js/move.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/con4_move.js"></script>
+    <script src="js/con4_move_m.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="navbar">
+        <h1>
+          <a class="logo_img" href="index.html"
+            ><img src="img/logo_gr.svg" alt="" />
+            <img src="img/logo_w.svg" alt=""
+          /></a>
+        </h1>
+        <ul id="pc_nav" class="nav h_center">
+          <li><a href="#">후원하기</a></li>
+          <li><a href="#">입양하기</a></li>
+          <li><a href="#">사업안내</a></li>
+          <li><a href="#">소식</a></li>
+        </ul>
+        <div class="h_right">
+          <ul class="h_btn">
+            <li class="btn1"><a href="#">나의 후원</a></li>
+            <li class="btn2"><a href="#">로그인</a></li>
+          </ul>
+          <div class="m_menu_btn"><i class="fa-solid fa-bars"></i></div>
+        </div>
+      </div>
+    </header>
+    <div id="visual" class="hero_visual">
+      <ul class="slide-img">
+        <li class="bg_on">
+          <div class="visual_txt">
+            <h2>
+              반려동물과의 올바른 관계,<br />
+              상품이 아닌 '생명'으로
+            </h2>
+            <p>
+              무분별한 생산·판매를 막으며<br />방치와 학대 등 동물 피해를
+              줄여나갑니다
+            </p>
+            <div class="more"><a href="#" class="btn1">자세히 보기</a></div>
+          </div>
+        </li>
+        <li>
+          <div class="visual_txt">
+            <h2>
+              반려동물과의 올바른 관계,<br />
+              상품이 아닌 '생명'으로
+            </h2>
+            <p>
+              무분별한 생산·판매를 막으며<br />방치와 학대 등 동물 피해를
+              줄여나갑니다
+            </p>
+            <div class="more"><a href="#" class="btn1">자세히 보기</a></div>
+          </div>
+        </li>
+        <li>
+          <div class="visual_txt">
+            <h2>
+              반려동물과의 올바른 관계,<br />
+              상품이 아닌 '생명'으로
+            </h2>
+            <p>
+              무분별한 생산·판매를 막으며<br />방치와 학대 등 동물 피해를
+              줄여나갑니다
+            </p>
+            <div class="more"><a href="#" class="btn1">자세히 보기</a></div>
+          </div>
+        </li>
+        <li>
+          <div class="visual_txt">
+            <h2>
+              반려동물과의 올바른 관계,<br />
+              상품이 아닌 '생명'으로
+            </h2>
+            <p>
+              무분별한 생산·판매를 막으며<br />방치와 학대 등 동물 피해를
+              줄여나갑니다
+            </p>
+            <div class="more"><a href="#" class="btn1">자세히 보기</a></div>
+          </div>
+        </li>
+        <li>
+          <div class="visual_txt">
+            <h2>
+              반려동물과의 올바른 관계,<br />
+              상품이 아닌 '생명'으로
+            </h2>
+            <p>
+              무분별한 생산·판매를 막으며<br />방치와 학대 등 동물 피해를
+              줄여나갑니다
+            </p>
+            <div class="more"><a href="#" class="btn1">자세히 보기</a></div>
+          </div>
+        </li>
+      </ul>
+      <div class="slide_dot">
+        <div class="s_left"><i class="fa-solid fa-chevron-left"></i></div>
+        <ul class="page">
+          <li class="page_on"><i class="fa-solid fa-minus"></i></li>
+          <li><i class="fa-solid fa-minus"></i></li>
+          <li><i class="fa-solid fa-minus"></i></li>
+          <li><i class="fa-solid fa-minus"></i></li>
+          <li><i class="fa-solid fa-minus"></i></li>
+        </ul>
+        <div class="s_right"><i class="fa-solid fa-chevron-right"></i></div>
+      </div>
+      <div class="boost_wrap">
+        <div class="boost">
+          <div class="boost_tit">
+            <h3 class="title2">
+              정부보조금 0%,<br />
+              여러분의 도움이 절실합니다.
+            </h3>
+            <p>동물을 살리는 일, 후원으로 함께하세요</p>
+          </div>
+          <form>
+            <ul class="boost_form sub3">
+              <li class="select">
+                <p>후원분야</p>
+                <input
+                  type="radio"
+                  id="done1"
+                  name="fund"
+                  value="정기후원"
+                  checked
+                />
+                <label for="done1"> 정기후원</label>
+                <input type="radio" id="done2" name="fund" value="일시후원" />
+                <label for="done2"> 일시후원</label>
+              </li>
+              <li class="price_wrap">
+                <p>후원금액</p>
+                <input
+                  type="radio"
+                  id="price1"
+                  name="won"
+                  value="15,000원"
+                  checked
+                />
+                <label for="price1"> 15,000원</label>
+                <input type="radio" id="price2" name="won" value="20,000원" />
+                <label for="price2"> 20,000원</label>
+                <input type="radio" id="price3" name="won" value="30,000원" />
+                <label for="price3"> 30,000원</label>
+              </li>
+            </ul>
+            <button type="submit">동물친구들 후원하기</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="container">
+      <section class="con1">
+        <div class="txtbox">
+          <p>동물 친구들의 하루를 지키는</p>
+          <h2 class="tit2">동물 후원 캠페인</h2>
+        </div>
+        <div class="slide_bg">
+          <ul class="con1_slide">
+            <li><img src="img/animal/1.jpg" alt="" /></li>
+            <li><img src="img/animal/2.jpg" alt="" /></li>
+            <li><img src="img/animal/3.jpg" alt="" /></li>
+            <li><img src="img/animal/4.jpg" alt="" /></li>
+            <li><img src="img/animal/5.jpg" alt="" /></li>
+            <li><img src="img/animal/6.jpg" alt="" /></li>
+            <li><img src="img/animal/7.jpg" alt="" /></li>
+          </ul>
+        </div>
+      </section>
+      <section class="con2">
+        <div class="con2_wrap">
+          <div class="con2_tit">
+            <span>후원이야기</span>
+            <h3 class="tit2">후원이 만들어낸 놀라운 변화</h3>
+          </div>
+          <ul class="report con2_on">
+            <li>
+              <div class="bread"><span>고양이 후원</span></div>
+              <a href="#">
+                <div class="subject">
+                  <span class="sub2">강동구 길냥이 어울쉼터 설치 완료</span>
+                  <p class="txt2">
+                    떠돌이 길냥이들을 보호해주고 아픈 친구들을 요양해줘요
+                  </p>
+                </div>
+                <img src="img/ex1.jpg" alt=""
+              /></a>
+            </li>
+            <li>
+              <div class="bread"><span>폐동물원 구조</span></div>
+              <a href="#">
+                <div class="subject">
+                  <span class="sub2">멸종위기 벵갈호랑이, 실내동물원 구조</span>
+                  <p class="txt2">
+                    햇빛없이 지낸 호랑이 '호광이', 광주우치동물원으로
+                    이송되었습니다.
+                  </p>
+                </div>
+                <img src="img/ex2.jpg" alt=""
+              /></a>
+            </li>
+            <li>
+              <div class="bread"><span>로드킬 예방</span></div>
+              <a href="#">
+                <div class="subject">
+                  <span class="sub2">호주 로드킬 방지 AI기술 국내도입</span>
+                  <p class="txt2">
+                    운전자 행동 변화 유도, 멸종 위기종 보호 및 도로 안전 기여
+                    기대
+                  </p>
+                </div>
+                <img src="img/ex3.jpg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="con3">
+        <div class="con3_wrap">
+          <div class="con3_tit">
+            <span class="sub2">유기동물 입양캠페인</span>
+            <h2 class="tit1">친구들의 가족이 되어주세요!</h2>
+          </div>
+          <div class="contents">
+            <div class="con3_txtbox">
+              <div class="con3_text">
+                <p class="line1">
+                  세계 최초 유기견 없는 나라,
+                  <span class="color">네덜란드</span>
+                </p>
+                <p>
+                  네덜란드 정부는 유기동물 개체수를 줄이기 위해<br />
+                  CNVR 모델을 국가차원에서 시행했다고 합니다.
+                </p>
+                <p>
+                  이 과정에서 발생하는 모든 비용은 정부가 전액 지원하였고<br />
+                  펫숍에서 품종견을 사는 비용과 세금을 매우 높게 책정하여<br />
+                  유기견센터에서 동물을 찾도록 유도합니다.<br />
+                  <br />개를 키우는 주인에게 매년 세금을 걷지만,<br />
+                  유기견을 입양할 경우 세금을 면제 또는 감면해주는 혜택을
+                  주는거죠.
+                </p>
+                <p class="line2 sub2">
+                  더 중요한 점은 동물을 물건이 아닌<br />
+                  <span class="color"
+                    >생명으로 대우하는<br />강력한 법적 장치를 마련</span
+                  >했다는 것입니다.
+                </p>
+                <p>
+                  우리나라도 유기동물이 없는 행복한 곳으로 만들기 위해<br />모두가
+                  노력해야 될 때입니다.<br />
+                  국가와 기업, 개인이 모두 협심하여<br />상처받는 동물들이 없을
+                  수 있도록 도와주세요<br /><br />
+                  <span class="line2 sub2 color"
+                    >여러분의 입양이 행복한 세상을 만들 수 있습니다.</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="con3_slide">
+              <ul class="imgwrap">
+                <li class="slide1"><img src="img/adopt1.jpg" alt="" /></li>
+                <li class="slide2"><img src="img/adopt2.jpg" alt="" /></li>
+                <li class="slide3"><img src="img/adopt3.jpeg" alt="" /></li>
+                <li class="slide4"><img src="img/adopt4.jpg" alt="" /></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="con4">
+        <div class="con4_wrap">
+          <div class="con4_tit">
+            <span class="sub2">친구들이 기다리고 있어요</span>
+            <h2 class="tit1">나를 기다리는 특별한 인연</h2>
+            <span class="more"
+              ><a href="#"
+                ><i class="fa-solid fa-circle-plus"></i>주인을 기다리고 있는
+                동물들 더 보기</a
+              ></span
+            >
+          </div>
+          <ul class="con4_arrow">
+            <li class="prev"><i class="fa-solid fa-angle-left"></i></li>
+            <li class="next"><i class="fa-solid fa-angle-right"></i></li>
+          </ul>
+          <div class="con4_slide">
+            <ul class="animal_list con4_pc">
+              <li>
+                <div class="list_img">
+                  <img src="img/puppycat/8.jpeg" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="list_img">
+                  <img src="img/puppycat/9.jpeg" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="list_img">
+                  <img src="img/puppycat/10.jpeg" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="list_img">
+                  <img src="img/puppycat/1.png" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="list_img">
+                  <img src="img/puppycat/2.png" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="list_img">
+                  <img src="img/puppycat/3.png" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="list_img">
+                  <img src="img/puppycat/4.png" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="list_img">
+                  <img src="img/puppycat/5.png" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="list_img">
+                  <img src="img/puppycat/6.png" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="list_img">
+                  <img src="img/puppycat/7.png" alt="" />
+                </div>
+              </li>
+            </ul>
+            <ul class="animal_laptop con4_laptop">
+              <li>
+                <div class="list_img">
+                  <img src="img/puppycat/9.jpeg" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="list_img">
+                  <img src="img/puppycat/10.jpeg" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="list_img">
+                  <img src="img/puppycat/1.png" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="list_img">
+                  <img src="img/puppycat/2.png" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="list_img">
+                  <img src="img/puppycat/3.png" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="list_img">
+                  <img src="img/puppycat/4.png" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="list_img">
+                  <img src="img/puppycat/5.png" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="list_img">
+                  <img src="img/puppycat/6.png" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="list_img">
+                  <img src="img/puppycat/7.png" alt="" />
+                </div>
+              </li>
+              <li>
+                <div class="list_img">
+                  <img src="img/puppycat/8.jpeg" alt="" />
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pf_box">
+            <ul class="profile">
+              <li class="pf_wrap ani1 flex_on">
+                <div class="pf_img">
+                  <img src="img/puppycat/1.png" alt="" />
+                </div>
+                <di class="pf_txt">
+                  <h4>안녕하세요. 저는 <span>모찌</span> 입니다</h4>
+                  <p>수컷 | 시고르자브종 | 2살</p>
+                </di>
+                <div class="pf_btn">
+                  <div class="pf_more">
+                    <a href="#" class="btn1">자세히 보기</a>
+                  </div>
+                  <div class="request">
+                    <a href="#" class="btn1">입양문의</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pf_wrap ani2">
+                <div class="pf_img">
+                  <img src="img/puppycat/2.png" alt="" />
+                </div>
+                <di class="pf_txt">
+                  <h4>안녕하세요. 저는 <span>모찌</span> 입니다</h4>
+                  <p>수컷 | 시고르자브종 | 2살</p>
+                </di>
+                <div class="pf_btn">
+                  <div class="pf_more">
+                    <a href="#" class="btn1">자세히 보기</a>
+                  </div>
+                  <div class="request">
+                    <a href="#" class="btn1">입양문의</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pf_wrap ani3">
+                <div class="pf_img">
+                  <img src="img/puppycat/3.png" alt="" />
+                </div>
+                <di class="pf_txt">
+                  <h4>안녕하세요. 저는 <span>모찌</span> 입니다</h4>
+                  <p>수컷 | 시고르자브종 | 2살</p>
+                </di>
+                <div class="pf_btn">
+                  <div class="pf_more">
+                    <a href="#" class="btn1">자세히 보기</a>
+                  </div>
+                  <div class="request">
+                    <a href="#" class="btn1">입양문의</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pf_wrap ani4">
+                <div class="pf_img">
+                  <img src="img/puppycat/4.png" alt="" />
+                </div>
+                <di class="pf_txt">
+                  <h4>안녕하세요. 저는 <span>모찌</span> 입니다</h4>
+                  <p>수컷 | 시고르자브종 | 2살</p>
+                </di>
+                <div class="pf_btn">
+                  <div class="pf_more">
+                    <a href="#" class="btn1">자세히 보기</a>
+                  </div>
+                  <div class="request">
+                    <a href="#" class="btn1">입양문의</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pf_wrap ani5">
+                <div class="pf_img">
+                  <img src="img/puppycat/5.png" alt="" />
+                </div>
+                <di class="pf_txt">
+                  <h4>안녕하세요. 저는 <span>모찌</span> 입니다</h4>
+                  <p>수컷 | 시고르자브종 | 2살</p>
+                </di>
+                <div class="pf_btn">
+                  <div class="pf_more">
+                    <a href="#" class="btn1">자세히 보기</a>
+                  </div>
+                  <div class="request">
+                    <a href="#" class="btn1">입양문의</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pf_wrap ani6">
+                <div class="pf_img">
+                  <img src="img/puppycat/6.png" alt="" />
+                </div>
+                <di class="pf_txt">
+                  <h4>안녕하세요. 저는 <span>모찌</span> 입니다</h4>
+                  <p>수컷 | 시고르자브종 | 2살</p>
+                </di>
+                <div class="pf_btn">
+                  <div class="pf_more">
+                    <a href="#" class="btn1">자세히 보기</a>
+                  </div>
+                  <div class="request">
+                    <a href="#" class="btn1">입양문의</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pf_wrap ani7">
+                <div class="pf_img">
+                  <img src="img/puppycat/7.png" alt="" />
+                </div>
+                <di class="pf_txt">
+                  <h4>안녕하세요. 저는 <span>모찌</span> 입니다</h4>
+                  <p>수컷 | 시고르자브종 | 2살</p>
+                </di>
+                <div class="pf_btn">
+                  <div class="pf_more">
+                    <a href="#" class="btn1">자세히 보기</a>
+                  </div>
+                  <div class="request">
+                    <a href="#" class="btn1">입양문의</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pf_wrap ani8">
+                <div class="pf_img">
+                  <img src="img/puppycat/8.jpeg" alt="" />
+                </div>
+                <di class="pf_txt">
+                  <h4>안녕하세요. 저는 <span>모찌</span> 입니다</h4>
+                  <p>수컷 | 시고르자브종 | 2살</p>
+                </di>
+                <div class="pf_btn">
+                  <div class="pf_more">
+                    <a href="#" class="btn1">자세히 보기</a>
+                  </div>
+                  <div class="request">
+                    <a href="#" class="btn1">입양문의</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pf_wrap ani9">
+                <div class="pf_img">
+                  <img src="img/puppycat/9.jpeg" alt="" />
+                </div>
+                <di class="pf_txt">
+                  <h4>안녕하세요. 저는 <span>모찌</span> 입니다</h4>
+                  <p>수컷 | 시고르자브종 | 2살</p>
+                </di>
+                <div class="pf_btn">
+                  <div class="pf_more">
+                    <a href="#" class="btn1">자세히 보기</a>
+                  </div>
+                  <div class="request">
+                    <a href="#" class="btn1">입양문의</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pf_wrap ani10">
+                <div class="pf_img">
+                  <img src="img/puppycat/10.jpeg" alt="" />
+                </div>
+                <di class="pf_txt">
+                  <h4>안녕하세요. 저는 <span>모찌</span> 입니다</h4>
+                  <p>수컷 | 시고르자브종 | 2살</p>
+                </di>
+                <div class="pf_btn">
+                  <div class="pf_more">
+                    <a href="#" class="btn1">자세히 보기</a>
+                  </div>
+                  <div class="request">
+                    <a href="#" class="btn1">입양문의</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="con4_m" class="con4_wrap">
+          <div class="con4_tit">
+            <span class="sub2">친구들이 기다리고 있어요</span>
+            <h2 class="tit1">
+              나를 기다리는<br />
+              특별한 인연
+            </h2>
+            <span class="more"
+              ><a href="#"
+                ><i class="fa-solid fa-circle-plus"></i>주인을 기다리고 있는
+                동물들 더 보기</a
+              ></span
+            >
+          </div>
+          <div class="pf_box_m">
+            <ul class="con4_arrow">
+              <li class="prev"><i class="fa-solid fa-angle-left"></i></li>
+              <li class="next"><i class="fa-solid fa-angle-right"></i></li>
+            </ul>
+            <ul class="profile_m">
+              <li class="pf_wrap ani1 flex_on">
+                <div class="pf_img">
+                  <img src="img/puppycat/1.png" alt="" />
+                </div>
+                <di class="pf_txt">
+                  <h4>안녕하세요. 저는 <span>모찌</span> 입니다</h4>
+                  <p>수컷 | 시고르자브종 | 2살</p>
+                </di>
+                <div class="pf_btn">
+                  <div class="pf_more">
+                    <a href="#" class="btn1">자세히 보기</a>
+                  </div>
+                  <div class="request">
+                    <a href="#" class="btn1">입양문의</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pf_wrap ani2">
+                <div class="pf_img">
+                  <img src="img/puppycat/2.png" alt="" />
+                </div>
+                <di class="pf_txt">
+                  <h4>안녕하세요. 저는 <span>모찌</span> 입니다</h4>
+                  <p>수컷 | 시고르자브종 | 2살</p>
+                </di>
+                <div class="pf_btn">
+                  <div class="pf_more">
+                    <a href="#" class="btn1">자세히 보기</a>
+                  </div>
+                  <div class="request">
+                    <a href="#" class="btn1">입양문의</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pf_wrap ani3">
+                <div class="pf_img">
+                  <img src="img/puppycat/3.png" alt="" />
+                </div>
+                <di class="pf_txt">
+                  <h4>안녕하세요. 저는 <span>모찌</span> 입니다</h4>
+                  <p>수컷 | 시고르자브종 | 2살</p>
+                </di>
+                <div class="pf_btn">
+                  <div class="pf_more">
+                    <a href="#" class="btn1">자세히 보기</a>
+                  </div>
+                  <div class="request">
+                    <a href="#" class="btn1">입양문의</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pf_wrap ani4">
+                <div class="pf_img">
+                  <img src="img/puppycat/4.png" alt="" />
+                </div>
+                <di class="pf_txt">
+                  <h4>안녕하세요. 저는 <span>모찌</span> 입니다</h4>
+                  <p>수컷 | 시고르자브종 | 2살</p>
+                </di>
+                <div class="pf_btn">
+                  <div class="pf_more">
+                    <a href="#" class="btn1">자세히 보기</a>
+                  </div>
+                  <div class="request">
+                    <a href="#" class="btn1">입양문의</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pf_wrap ani5">
+                <div class="pf_img">
+                  <img src="img/puppycat/5.png" alt="" />
+                </div>
+                <di class="pf_txt">
+                  <h4>안녕하세요. 저는 <span>모찌</span> 입니다</h4>
+                  <p>수컷 | 시고르자브종 | 2살</p>
+                </di>
+                <div class="pf_btn">
+                  <div class="pf_more">
+                    <a href="#" class="btn1">자세히 보기</a>
+                  </div>
+                  <div class="request">
+                    <a href="#" class="btn1">입양문의</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pf_wrap ani6">
+                <div class="pf_img">
+                  <img src="img/puppycat/6.png" alt="" />
+                </div>
+                <di class="pf_txt">
+                  <h4>안녕하세요. 저는 <span>모찌</span> 입니다</h4>
+                  <p>수컷 | 시고르자브종 | 2살</p>
+                </di>
+                <div class="pf_btn">
+                  <div class="pf_more">
+                    <a href="#" class="btn1">자세히 보기</a>
+                  </div>
+                  <div class="request">
+                    <a href="#" class="btn1">입양문의</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pf_wrap ani7">
+                <div class="pf_img">
+                  <img src="img/puppycat/7.png" alt="" />
+                </div>
+                <di class="pf_txt">
+                  <h4>안녕하세요. 저는 <span>모찌</span> 입니다</h4>
+                  <p>수컷 | 시고르자브종 | 2살</p>
+                </di>
+                <div class="pf_btn">
+                  <div class="pf_more">
+                    <a href="#" class="btn1">자세히 보기</a>
+                  </div>
+                  <div class="request">
+                    <a href="#" class="btn1">입양문의</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pf_wrap ani8">
+                <div class="pf_img">
+                  <img src="img/puppycat/8.jpeg" alt="" />
+                </div>
+                <di class="pf_txt">
+                  <h4>안녕하세요. 저는 <span>모찌</span> 입니다</h4>
+                  <p>수컷 | 시고르자브종 | 2살</p>
+                </di>
+                <div class="pf_btn">
+                  <div class="pf_more">
+                    <a href="#" class="btn1">자세히 보기</a>
+                  </div>
+                  <div class="request">
+                    <a href="#" class="btn1">입양문의</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pf_wrap ani9">
+                <div class="pf_img">
+                  <img src="img/puppycat/9.jpeg" alt="" />
+                </div>
+                <di class="pf_txt">
+                  <h4>안녕하세요. 저는 <span>모찌</span> 입니다</h4>
+                  <p>수컷 | 시고르자브종 | 2살</p>
+                </di>
+                <div class="pf_btn">
+                  <div class="pf_more">
+                    <a href="#" class="btn1">자세히 보기</a>
+                  </div>
+                  <div class="request">
+                    <a href="#" class="btn1">입양문의</a>
+                  </div>
+                </div>
+              </li>
+              <li class="pf_wrap ani10">
+                <div class="pf_img">
+                  <img src="img/puppycat/10.jpeg" alt="" />
+                </div>
+                <di class="pf_txt">
+                  <h4>안녕하세요. 저는 <span>모찌</span> 입니다</h4>
+                  <p>수컷 | 시고르자브종 | 2살</p>
+                </di>
+                <div class="pf_btn">
+                  <div class="pf_more">
+                    <a href="#" class="btn1">자세히 보기</a>
+                  </div>
+                  <div class="request">
+                    <a href="#" class="btn1">입양문의</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <ul class="foot_wrap">
+          <li class="left">
+            <h1>
+              <a class="logo_img" href="index.html">
+                <img src="img/logo_w.svg" alt=""
+              /></a>
+            </h1>
+          </li>
+          <li class="right">
+            <div class="foot_menu">
+              <a href="#">개인정보 처리방침</a>
+              <a href="#">이메일 무단 수집 거부</a>
+              <a href="#">사이트맵</a>
+              <a href="#">익명 신고 센터 </a>
+            </div>
+            <ul class="copy">
+              <li>07752 서울특별시 강서구 강서로18다길 8-10</li>
+              <li>COPYRIGHT(C) 동지. ALL RIGHT RESERVED.</li>
+            </ul>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
